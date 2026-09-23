@@ -7,10 +7,4 @@ document.querySelectorAll('nav a').forEach(a=>{
   });
 });
 
-// botão de contato
-document.getElementById('btnEnviar')?.addEventListener('click', e=>{
-  e.preventDefault();
-  alert('mensagem enviada! 🧡');
-});
-
  

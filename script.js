@@ -1,0 +1,16 @@
+// scroll suave dos botões do nav
+document.querySelectorAll('nav a').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const id = a.getAttribute('href');
+    document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
+  });
+});
+
+// botão de contato
+document.getElementById('btnEnviar')?.addEventListener('click', e=>{
+  e.preventDefault();
+  alert('mensagem enviada! 🧡');
+});
+
+ 
